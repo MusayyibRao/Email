@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+}
+
+.card {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 40px;
+  border: 3px solid green;
+  border-radius: 30px;
+}
+
+.container {
+  margin-top: -15px;
+  background-color: goldenrod;
+}
+
+.card button {
+  margin: 10px;
+}

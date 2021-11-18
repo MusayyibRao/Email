@@ -1,0 +1,26 @@
+<form (ngSubmit)="doSubmitForm()" >
+<div class="container">  
+  <div class="card">
+    
+<h1>------Email sender-----</h1>
+<mat-form-field appearance="outline">
+    <mat-label>To</mat-label>
+    <input type="email" name="to" [(ngModel)]="data.to" matInput email="true">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Subject</mat-label>
+    <input  name="subject" [(ngModel)]="data.subject" matInput required>    <!-- [(ngModel)]="data.subject" -->
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Leave a comment</mat-label>
+    <textarea name="message" [(ngModel)]="data.message" rows="15"matInput required></textarea>
+  </mat-form-field>
+<div class="text-center" >
+<button type="submit" mat-raised-button color="primary" >Send</button>
+<button type="reset" mat-raised-button color="accent">Reset</button>
+</div>
+</div>
+</div>
+</form>
+{{data  | json}}
